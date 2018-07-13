@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@font-face {
+	font-family: samim;
+	font-style: normal;
+	font-weight: bold;
+	src: url('assets/fonts/Samim-Bold-FD.eot');
+	src: url('assets/fonts/Samim-Bold-FD.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('assets/fonts/Samim-Bold-FD.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('assets/fonts/Samim-Bold-FD.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('assets/fonts/Samim-Bold-FD.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: samim;
+	font-style: normal;
+	font-weight: normal;
+	src: url('assets/fonts/Samim-FD.eot');
+	src: url('assets/fonts/Samim-FD.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('assets/fonts/Samim-FD.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('assets/fonts/Samim-FD.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('assets/fonts/Samim-FD.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+}
+
+body, span, p, h1, h2, h3, h4, h5, h6, mat-toolbar, mat-card-title,
+mat-list-item, .mat-header-cell, .mat-cell, mat-error, mat-hint,
+.mat-input-element, mat-button-toggle, .mat-menu-item,
+.customSnackBar simple-snack-bar, .tooltip {
+    font-family: samim, sans-serif !important;
+}
+
+
+.mat-dialog-actions {
+    direction: ltr;
+}

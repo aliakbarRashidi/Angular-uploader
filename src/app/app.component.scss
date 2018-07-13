@@ -1,0 +1,52 @@
+.header-container {
+    height: 100vh;
+    background: #00b09b;
+    background: -webkit-linear-gradient(40deg, #84b137, #069c8b);
+    background: linear-gradient(40deg, #84b137, #069c8b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    >div {
+        color: white;
+        display: flex;
+        justify-content: center;
+        font-size: 1.1em;
+        text-align: center;
+        line-height: 35px;
+        direction: rtl;
+    }
+    div.title {
+        font-size: 3.2em;
+        font-weight: 600;
+        margin-bottom: 50px;
+        span {
+        animation-name: custom-zoom;
+        animation-duration: 4s;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        }
+    }
+    button {
+        font-size: 0.85em;
+        margin: 10px 8px;
+        margin-top: 40px;
+    }
+}
+
+@keyframes custom-zoom {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}

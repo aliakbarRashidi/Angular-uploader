@@ -1,0 +1,16 @@
+<h1 mat-dialog-title class="title">آپلود فایل در انگولار</h1>
+<div>
+  <mat-progress-bar mode="determinate" [value]="percent"></mat-progress-bar>
+</div>
+<div class="info">
+  <span>درصد آپلود شده: {{percent}}</span>
+  <span>حجم آپلود شده: {{loaded}}</span>
+  <span *ngIf="addedFile">حجم فایل: {{addedFile.size}}</span>
+</div>
+<div mat-dialog-actions>
+  <button mat-button color="primary" (click)="addFiles()">افزودن فایل</button>
+  <button mat-button color="primary" (click)="upload()">آپلود</button>
+  <button mat-button cdkFocusInitial [mat-dialog-close]>بستن</button>
+</div>
+
+<input type="file" #file style="display: none" (change)="onFilesAdded()" multiple />

@@ -1,14 +1,13 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { UploadModule } from './upload/upload.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
-    BrowserModule
+    BrowserModule,
+    UploadModule
   ],
   providers: [],
   bootstrap: [AppComponent]
